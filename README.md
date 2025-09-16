@@ -5,3 +5,9 @@ Federated learning offers an alternative approach where models are trained acros
 
 This research contributes to the comprehension of federated learning’s competences and challenges in a decentralised machine learning setting. Future directions include the integration of advanced techniques to combat non-IID data and exploring FL in
 healthcare domain (for eg. x ray imaging) where privacy is of the highest priority.
+
+TO RUN: 
+
+source ~/cifar10_env/bin/activate
+
+python FL_model_testing.py
