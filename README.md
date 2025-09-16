@@ -9,4 +9,5 @@ healthcare domain (for eg. x ray imaging) where privacy is of the highest priori
 TO RUN: 
 
 source ~/cifar10_env/bin/activate
+
 python FL_model_testing.py
