@@ -1,0 +1,132 @@
+Experiment 1:
+
+Learning Rate: 0.01 -> 0.001
+Momentum: 0.9
+Epoch: 3
+Dirichlet Alpha: 0.7
+Num_rounds: 5
+Num_classes: 10
+Num_clients: 10
+Num_clients_per_round: 5
+Batch_size: 32
+
+Notes: Testing impact of lower learning rate on convergence. Low alpha and 
+epochs cause bias and reducing learning rate didn't help. The undertrained 
+model overfits to dominant classes.
+
+Results: Final Test Accuracy -> 10.03%
+
+Experiment 2:
+
+Learning Rate: 0.001
+Momentum: 0.9
+Epoch: 3
+Dirichlet Alpha: 0.7 -> 0.2
+Num_rounds: 5->7
+Num_clients: 10
+Num_clients_per_round: 5
+
+Notes: Model can't adjust and showing major bias. Very few clients are dominating the rest of the pack. 
+
+Results: Final Test Accuracy -> 11.38%
+
+
+Experiment 3:
+
+Learning Rate: 0.001
+Momentum: 0.9
+Epoch: 3 -> 2
+Dirichlet Alpha: 0.2 -> 2
+Num_rounds: 7 -> 5
+Num_clients: 10
+Num_clients_per_round: 5 -> 4
+Batch_size: 32-> 64
+
+Notes: Experimenting with stability. Increasing alpha so that the bias is less extreme. 
+
+Results: Final Test Accuracy -> 13.83%
+
+Experiment 4:
+
+Firstly, added the following debug statements
+# Debug print to inspect raw outputs
+print(f"Sample outputs (logits): {outputs[:2]}") 
+# Print logits for first 2 samples
+
+# Debug print to verify predictions vs. labels
+print(f"Sample predictions: {predicted[:10]}, Sample labels: {labels[:10]}")
+
+Learning Rate: 0.001
+Momentum: 0.9 -> 0.7
+Epoch: 2
+Dirichlet Alpha: 2-> 5
+Num_rounds: 5
+Num_classes: 10
+Num_clients: 10
+Num_clients_per_round: 5
+Batch_size: 32
+
+Notes: I added the debug statements above to inspect raw logits so that I can identify the skewed outputs and find problems. There was a significant error due to a small indentation mistake which resulted in instead of averaging the weights of all selected clients, the global model’s weights were set to a scaled version of the last client’s weights. I fixed this small but crucial mistake.I also achieved my first diagonal confusion matrix with significantly improved accuracy (30%). 
+
+Results: Final Test Accuracy -> 41.67%
+
+Experiment 5: 
+
+Learning Rate: 0.001 -> 0.005  // faster convergence
+Momentum: 0.7
+Epoch: 2 ->4            // better local training 
+Dirichlet Alpha: 5->7   // smoother non IID splits
+Num_rounds: 5
+Num_classes: 10
+Num_clients: 10
+Num_clients_per_round: 5-> 7
+Batch_size: 32
+
+Notes: Increased alpha to 7 for smoother non IID splits and also aggregated more updates per round by increasing num_clients_per_round. Achieved a conf. Matrix with improved class balance. 
+
+Results : Final Test Accuracy -> 54.14%
+
+
+Experiment 6:  
+
+Learning Rate: 0.005 -> 0.002   // for more precise updates
+Momentum: 0.7
+Epoch: 4 -> 7                  // gives model more time to learn 
+Dirichlet Alpha: 7 -> 15      // reduces data skew significantly 
+Num_rounds: 5
+Num_classes: 10
+Num_clients: 10
+Num_clients_per_round: 7
+Batch_size: 32-> 64
+
+Notes: Adjusted parameters more aggressively to get tighter confusion matrix. 
+
+Results: Final Test Accuracy -> 52.23%
+
+
+Experiment 7:
+
+Learning Rate: 0.002 -> 0.001
+Momentum: 0.7 -> 0.9           // better stability
+Epoch: 7 -> 3                  // making the program running very slow and time consuming
+Dirichlet Alpha: 5
+Num_rounds: 3 -> 7             // better global averaging
+Num_clients_per_round: 7 
+Batch_size: 64 -> 128
+
+Notes: Trying to reduce off diagonal errors thanks to enhanced global updates despite the lower epochs. 
+
+Results: Final Test Accuracy -> 47.93%   // low epochs reduced the accuracy 
+
+
+Experiment 8:
+Learning Rate: 0.001 -> 0.05
+Epoch: 7 -> 3                  // making the program running very slow and time consuming
+Dirichlet Alpha: 5 -> 0.9
+Num_rounds: 3 -> 7             //
+Num_clients_per_round: 5
+Results: Final Test Accuracy -> 63.57%
+
+Experiment 9: 68.80%
+Experiment 11: 65.07%
+

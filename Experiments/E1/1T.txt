@@ -1,0 +1,140 @@
+(base) siddharthlala@Siddharths-MacBook-Pro ~ % cd /Users/siddharthlala/Desktop/Experiments/E1
+(base) siddharthlala@Siddharths-MacBook-Pro E1 % source ~/cifar10_env/bin/activate
+
+(cifar10_env) (base) siddharthlala@Siddharths-MacBook-Pro E1 % python FL_model_testing.py
+
+Loading test data...
+100.0%
+Loading trained global model...
+Client 0: 3998 samples
+Client 1: 8591 samples
+Client 2: 2758 samples
+Client 3: 5538 samples
+Client 4: 4536 samples
+Client 5: 6940 samples
+Client 6: 5571 samples
+Client 7: 4070 samples
+Client 8: 4386 samples
+Client 9: 3612 samples
+2025-03-19 03:38:13.117 Python[80699:15141968] +[IMKClient subclass]: chose IMKClient_Modern
+2025-03-19 03:38:13.117 Python[80699:15141968] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+
+=== FL Round 1 ===
+Training Client 6...
+Epoch 1, Loss: 1.9529392732892719
+Epoch 2, Loss: 1.7313989128385272
+Epoch 3, Loss: 1.5904581839697702
+Training Client 3...
+Epoch 1, Loss: 1.921582096609576
+Epoch 2, Loss: 1.5766192503359127
+Epoch 3, Loss: 1.4222130789153877
+Training Client 8...
+Epoch 1, Loss: 1.8809198322503462
+Epoch 2, Loss: 1.5617194754489954
+Epoch 3, Loss: 1.4568225499512493
+Training Client 9...
+Epoch 1, Loss: 2.0843466488660964
+Epoch 2, Loss: 1.8808976749403288
+Epoch 3, Loss: 1.7848116919002701
+Training Client 4...
+Epoch 1, Loss: 1.5026418172137839
+Epoch 2, Loss: 1.198302382314709
+Epoch 3, Loss: 1.1136855726510706
+Global model saved as global_model.pth
+
+=== FL Round 2 ===
+Training Client 4...
+Epoch 1, Loss: 1.531117428356493
+Epoch 2, Loss: 1.2031830129489092
+Epoch 3, Loss: 1.1159673030947295
+Training Client 7...
+Epoch 1, Loss: 1.6225154334679246
+Epoch 2, Loss: 1.332616312429309
+Epoch 3, Loss: 1.2706533684395254
+Training Client 6...
+Epoch 1, Loss: 1.967247109413147
+Epoch 2, Loss: 1.7599811247416906
+Epoch 3, Loss: 1.6093628876549857
+Training Client 5...
+Epoch 1, Loss: 1.8619080150182346
+Epoch 2, Loss: 1.5470162833341257
+Epoch 3, Loss: 1.4404118819170832
+Training Client 0...
+Epoch 1, Loss: 1.7864502248764038
+Epoch 2, Loss: 1.535605556488037
+Epoch 3, Loss: 1.4886133542060853
+Global model saved as global_model.pth
+
+=== FL Round 3 ===
+Training Client 8...
+Epoch 1, Loss: 1.8387086892473525
+Epoch 2, Loss: 1.5352333723634914
+Epoch 3, Loss: 1.4304431599119436
+Training Client 5...
+Epoch 1, Loss: 1.8678460176089942
+Epoch 2, Loss: 1.5586311542493407
+Epoch 3, Loss: 1.433269466672625
+Training Client 9...
+Epoch 1, Loss: 2.1340705325118208
+Epoch 2, Loss: 1.895954692258244
+Epoch 3, Loss: 1.7868857267683587
+Training Client 7...
+Epoch 1, Loss: 1.6376038221642375
+Epoch 2, Loss: 1.322637575212866
+Epoch 3, Loss: 1.2646939065307379
+Training Client 3...
+Epoch 1, Loss: 1.9576214750607808
+Epoch 2, Loss: 1.5844133838839916
+Epoch 3, Loss: 1.4245953152234527
+Global model saved as global_model.pth
+
+=== FL Round 4 ===
+Training Client 4...
+Epoch 1, Loss: 1.5328035077578586
+Epoch 2, Loss: 1.2177436204863266
+Epoch 3, Loss: 1.1411335909030806
+Training Client 8...
+Epoch 1, Loss: 1.8642820517222087
+Epoch 2, Loss: 1.5516708475956018
+Epoch 3, Loss: 1.4526728650797969
+Training Client 0...
+Epoch 1, Loss: 1.7777688002586365
+Epoch 2, Loss: 1.5354360265731812
+Epoch 3, Loss: 1.4807819404602052
+Training Client 3...
+Epoch 1, Loss: 1.9248159377054237
+Epoch 2, Loss: 1.5811640716147148
+Epoch 3, Loss: 1.4172941120876663
+Training Client 5...
+Epoch 1, Loss: 1.868995178130365
+Epoch 2, Loss: 1.5315817001228509
+Epoch 3, Loss: 1.4288402273907639
+Global model saved as global_model.pth
+
+=== FL Round 5 ===
+Training Client 0...
+Epoch 1, Loss: 1.763425347328186
+Epoch 2, Loss: 1.544854001045227
+Epoch 3, Loss: 1.5002562351226807
+Training Client 1...
+Epoch 1, Loss: 1.8150467300946829
+Epoch 2, Loss: 1.489452864822402
+Epoch 3, Loss: 1.3243921029080246
+Training Client 3...
+Epoch 1, Loss: 1.9721542315921565
+Epoch 2, Loss: 1.6264426557497047
+Epoch 3, Loss: 1.4269813210114666
+Training Client 6...
+Epoch 1, Loss: 1.9375708491461618
+Epoch 2, Loss: 1.6932174110412597
+Epoch 3, Loss: 1.5485142987115041
+Training Client 9...
+Epoch 1, Loss: 2.0810458807818657
+Epoch 2, Loss: 1.8897643416328769
+Epoch 3, Loss: 1.7865177783290898
+Global model saved as global_model.pth
+
+Federated Learning Training Complete!
+Evaluating model on test set...
+Generating confusion matrix...
+

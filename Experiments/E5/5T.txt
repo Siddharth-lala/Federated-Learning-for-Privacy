@@ -1,0 +1,558 @@
+(base) siddharthlala@Siddharths-MacBook-Pro ~ % cd /Users/siddharthlala/Desktop/Experiments/E5
+(base) siddharthlala@Siddharths-MacBook-Pro E5 % source ~/cifar10_env/bin/activate
+python FL_model_testing.py
+⚙ ⚙ ⚙ Loading test data...
+⚙ ⚙ ⚙ Loading trained global model...
+
+=== FL Round 1 ===
+Training Client 4...
+Client Epoch 1, Batch 1/38, Loss: 2.3730
+Client Epoch 1, Batch 38/38, Loss: 1.5717
+Epoch 1, Average Loss: 1.7494
+Client Epoch 2, Batch 1/38, Loss: 1.5709
+Client Epoch 2, Batch 38/38, Loss: 1.4237
+Epoch 2, Average Loss: 1.4529
+Client Epoch 3, Batch 1/38, Loss: 1.3844
+Client Epoch 3, Batch 38/38, Loss: 1.3216
+Epoch 3, Average Loss: 1.3634
+Client Epoch 4, Batch 1/38, Loss: 1.2345
+Client Epoch 4, Batch 38/38, Loss: 1.2788
+Epoch 4, Average Loss: 1.3073
+Client 4 Accuracy on Local Data: 0.6848
+Training Client 3...
+Client Epoch 1, Batch 1/94, Loss: 2.3632
+Client Epoch 1, Batch 94/94, Loss: 1.4643
+Epoch 1, Average Loss: 1.6849
+Client Epoch 2, Batch 1/94, Loss: 1.3813
+Client Epoch 2, Batch 94/94, Loss: 1.1733
+Epoch 2, Average Loss: 1.4794
+Client Epoch 3, Batch 1/94, Loss: 1.5322
+Client Epoch 3, Batch 94/94, Loss: 1.2899
+Epoch 3, Average Loss: 1.4022
+Client Epoch 4, Batch 1/94, Loss: 1.3771
+Client Epoch 4, Batch 94/94, Loss: 1.1771
+Epoch 4, Average Loss: 1.3587
+Client 3 Accuracy on Local Data: 0.6486
+Training Client 9...
+Client Epoch 1, Batch 1/45, Loss: 2.4704
+Client Epoch 1, Batch 45/45, Loss: 1.5678
+Epoch 1, Average Loss: 1.9178
+Client Epoch 2, Batch 1/45, Loss: 1.6735
+Client Epoch 2, Batch 45/45, Loss: 1.5548
+Epoch 2, Average Loss: 1.7249
+Client Epoch 3, Batch 1/45, Loss: 1.7360
+Client Epoch 3, Batch 45/45, Loss: 1.5545
+Epoch 3, Average Loss: 1.6467
+Client Epoch 4, Batch 1/45, Loss: 1.5469
+Client Epoch 4, Batch 45/45, Loss: 1.6173
+Epoch 4, Average Loss: 1.5924
+Client 9 Accuracy on Local Data: 0.5481
+Training Client 0...
+Client Epoch 1, Batch 1/83, Loss: 2.4036
+Client Epoch 1, Batch 83/83, Loss: 1.6986
+Epoch 1, Average Loss: 1.7905
+Client Epoch 2, Batch 1/83, Loss: 1.7280
+Client Epoch 2, Batch 83/83, Loss: 1.2254
+Epoch 2, Average Loss: 1.5405
+Client Epoch 3, Batch 1/83, Loss: 1.3803
+Client Epoch 3, Batch 83/83, Loss: 1.6920
+Epoch 3, Average Loss: 1.4589
+Client Epoch 4, Batch 1/83, Loss: 1.4700
+Client Epoch 4, Batch 83/83, Loss: 1.1774
+Epoch 4, Average Loss: 1.3926
+Client 0 Accuracy on Local Data: 0.6591
+Training Client 1...
+Client Epoch 1, Batch 1/88, Loss: 2.3142
+Client Epoch 1, Batch 88/88, Loss: 1.8119
+Epoch 1, Average Loss: 1.8982
+Client Epoch 2, Batch 1/88, Loss: 1.7309
+Client Epoch 2, Batch 88/88, Loss: 1.6822
+Epoch 2, Average Loss: 1.6654
+Client Epoch 3, Batch 1/88, Loss: 1.7086
+Client Epoch 3, Batch 88/88, Loss: 1.5058
+Epoch 3, Average Loss: 1.5644
+Client Epoch 4, Batch 1/88, Loss: 1.4729
+Client Epoch 4, Batch 88/88, Loss: 1.4325
+Epoch 4, Average Loss: 1.4830
+Client 1 Accuracy on Local Data: 0.6270
+Training Client 8...
+Client Epoch 1, Batch 1/78, Loss: 2.4330
+Client Epoch 1, Batch 78/78, Loss: 1.9825
+Epoch 1, Average Loss: 1.9268
+Client Epoch 2, Batch 1/78, Loss: 1.8241
+Client Epoch 2, Batch 78/78, Loss: 1.4953
+Epoch 2, Average Loss: 1.7281
+Client Epoch 3, Batch 1/78, Loss: 1.6820
+Client Epoch 3, Batch 78/78, Loss: 1.9236
+Epoch 3, Average Loss: 1.6531
+Client Epoch 4, Batch 1/78, Loss: 1.5689
+Client Epoch 4, Batch 78/78, Loss: 1.5559
+Epoch 4, Average Loss: 1.5957
+Client 8 Accuracy on Local Data: 0.5352
+Training Client 2...
+Client Epoch 1, Batch 1/92, Loss: 2.3928
+Client Epoch 1, Batch 92/92, Loss: 1.7389
+Epoch 1, Average Loss: 1.7657
+Client Epoch 2, Batch 1/92, Loss: 1.7527
+Client Epoch 2, Batch 92/92, Loss: 1.4959
+Epoch 2, Average Loss: 1.5546
+Client Epoch 3, Batch 1/92, Loss: 1.4657
+Client Epoch 3, Batch 92/92, Loss: 1.3143
+Epoch 3, Average Loss: 1.4837
+Client Epoch 4, Batch 1/92, Loss: 1.4052
+Client Epoch 4, Batch 92/92, Loss: 1.2117
+Epoch 4, Average Loss: 1.4210
+Client 2 Accuracy on Local Data: 0.6389
+Aggregated Weights for fc2.bias: -0.00043260608799755573
+Aggregated Weights for fc2.bias: -0.0015067337080836296
+Aggregated Weights for fc2.bias: -0.0020206794142723083
+Aggregated Weights for fc2.bias: -0.002964095212519169
+Aggregated Weights for fc2.bias: -0.003972698003053665
+Aggregated Weights for fc2.bias: -0.004859175533056259
+Aggregated Weights for fc2.bias: -0.005904830992221832
+Global model saved as global_model.pth
+Round 1 - Global Model Test Accuracy: 0.3771
+
+=== FL Round 2 ===
+Training Client 9...
+Client Epoch 1, Batch 1/45, Loss: 1.8950
+Client Epoch 1, Batch 45/45, Loss: 1.5509
+Epoch 1, Average Loss: 1.5819
+Client Epoch 2, Batch 1/45, Loss: 1.3656
+Client Epoch 2, Batch 45/45, Loss: 1.5675
+Epoch 2, Average Loss: 1.5213
+Client Epoch 3, Batch 1/45, Loss: 1.7918
+Client Epoch 3, Batch 45/45, Loss: 1.6838
+Epoch 3, Average Loss: 1.4869
+Client Epoch 4, Batch 1/45, Loss: 1.3196
+Client Epoch 4, Batch 45/45, Loss: 1.2385
+Epoch 4, Average Loss: 1.4597
+Client 9 Accuracy on Local Data: 0.5931
+Training Client 8...
+Client Epoch 1, Batch 1/78, Loss: 2.1174
+Client Epoch 1, Batch 78/78, Loss: 1.8470
+Epoch 1, Average Loss: 1.6992
+Client Epoch 2, Batch 1/78, Loss: 1.5083
+Client Epoch 2, Batch 78/78, Loss: 1.5573
+Epoch 2, Average Loss: 1.5764
+Client Epoch 3, Batch 1/78, Loss: 1.5863
+Client Epoch 3, Batch 78/78, Loss: 1.4408
+Epoch 3, Average Loss: 1.5370
+Client Epoch 4, Batch 1/78, Loss: 1.4181
+Client Epoch 4, Batch 78/78, Loss: 1.7614
+Epoch 4, Average Loss: 1.5022
+Client 8 Accuracy on Local Data: 0.5780
+Training Client 1...
+Client Epoch 1, Batch 1/88, Loss: 1.8011
+Client Epoch 1, Batch 88/88, Loss: 1.4963
+Epoch 1, Average Loss: 1.5761
+Client Epoch 2, Batch 1/88, Loss: 1.5364
+Client Epoch 2, Batch 88/88, Loss: 1.4534
+Epoch 2, Average Loss: 1.4794
+Client Epoch 3, Batch 1/88, Loss: 1.4402
+Client Epoch 3, Batch 88/88, Loss: 1.4226
+Epoch 3, Average Loss: 1.4298
+Client Epoch 4, Batch 1/88, Loss: 1.4387
+Client Epoch 4, Batch 88/88, Loss: 1.4436
+Epoch 4, Average Loss: 1.3904
+Client 1 Accuracy on Local Data: 0.6581
+Training Client 5...
+Client Epoch 1, Batch 1/118, Loss: 2.2633
+Client Epoch 1, Batch 118/118, Loss: 1.6555
+Epoch 1, Average Loss: 1.7195
+Client Epoch 2, Batch 1/118, Loss: 1.5828
+Client Epoch 2, Batch 118/118, Loss: 1.6280
+Epoch 2, Average Loss: 1.6038
+Client Epoch 3, Batch 1/118, Loss: 1.5058
+Client Epoch 3, Batch 118/118, Loss: 2.1417
+Epoch 3, Average Loss: 1.5585
+Client Epoch 4, Batch 1/118, Loss: 1.5411
+Client Epoch 4, Batch 118/118, Loss: 1.5292
+Epoch 4, Average Loss: 1.5176
+Client 5 Accuracy on Local Data: 0.5820
+Training Client 3...
+Client Epoch 1, Batch 1/94, Loss: 2.0621
+Client Epoch 1, Batch 94/94, Loss: 1.2752
+Epoch 1, Average Loss: 1.4407
+Client Epoch 2, Batch 1/94, Loss: 1.5963
+Client Epoch 2, Batch 94/94, Loss: 1.5219
+Epoch 2, Average Loss: 1.3445
+Client Epoch 3, Batch 1/94, Loss: 1.3406
+Client Epoch 3, Batch 94/94, Loss: 1.1832
+Epoch 3, Average Loss: 1.2996
+Client Epoch 4, Batch 1/94, Loss: 1.2800
+Client Epoch 4, Batch 94/94, Loss: 1.2025
+Epoch 4, Average Loss: 1.2697
+Client 3 Accuracy on Local Data: 0.6966
+Training Client 6...
+Client Epoch 1, Batch 1/89, Loss: 2.0178
+Client Epoch 1, Batch 89/89, Loss: 1.6085
+Epoch 1, Average Loss: 1.7218
+Client Epoch 2, Batch 1/89, Loss: 1.6844
+Client Epoch 2, Batch 89/89, Loss: 2.4378
+Epoch 2, Average Loss: 1.6119
+Client Epoch 3, Batch 1/89, Loss: 1.6294
+Client Epoch 3, Batch 89/89, Loss: 1.9987
+Epoch 3, Average Loss: 1.5554
+Client Epoch 4, Batch 1/89, Loss: 1.5131
+Client Epoch 4, Batch 89/89, Loss: 1.7252
+Epoch 4, Average Loss: 1.5136
+Client 6 Accuracy on Local Data: 0.5655
+Training Client 4...
+Client Epoch 1, Batch 1/38, Loss: 2.0383
+Client Epoch 1, Batch 38/38, Loss: 1.2253
+Epoch 1, Average Loss: 1.4450
+Client Epoch 2, Batch 1/38, Loss: 1.3631
+Client Epoch 2, Batch 38/38, Loss: 1.1821
+Epoch 2, Average Loss: 1.2654
+Client Epoch 3, Batch 1/38, Loss: 1.2430
+Client Epoch 3, Batch 38/38, Loss: 1.1383
+Epoch 3, Average Loss: 1.2258
+Client Epoch 4, Batch 1/38, Loss: 1.1470
+Client Epoch 4, Batch 38/38, Loss: 1.1567
+Epoch 4, Average Loss: 1.1992
+Client 4 Accuracy on Local Data: 0.7411
+Aggregated Weights for fc2.bias: -0.00048392126336693764
+Aggregated Weights for fc2.bias: -0.0013186093419790268
+Aggregated Weights for fc2.bias: -0.002268292009830475
+Aggregated Weights for fc2.bias: -0.003531781956553459
+Aggregated Weights for fc2.bias: -0.004543153569102287
+Aggregated Weights for fc2.bias: -0.005494007840752602
+Aggregated Weights for fc2.bias: -0.00590134784579277
+Global model saved as global_model.pth
+Round 2 - Global Model Test Accuracy: 0.4405
+
+=== FL Round 3 ===
+Training Client 5...
+Client Epoch 1, Batch 1/118, Loss: 1.9165
+Client Epoch 1, Batch 118/118, Loss: 2.0988
+Epoch 1, Average Loss: 1.6006
+Client Epoch 2, Batch 1/118, Loss: 1.5713
+Client Epoch 2, Batch 118/118, Loss: 1.5120
+Epoch 2, Average Loss: 1.5274
+Client Epoch 3, Batch 1/118, Loss: 1.6163
+Client Epoch 3, Batch 118/118, Loss: 1.4492
+Epoch 3, Average Loss: 1.4926
+Client Epoch 4, Batch 1/118, Loss: 1.4975
+Client Epoch 4, Batch 118/118, Loss: 1.2226
+Epoch 4, Average Loss: 1.4639
+Client 5 Accuracy on Local Data: 0.6042
+Training Client 8...
+Client Epoch 1, Batch 1/78, Loss: 1.8506
+Client Epoch 1, Batch 78/78, Loss: 1.8091
+Epoch 1, Average Loss: 1.5594
+Client Epoch 2, Batch 1/78, Loss: 1.5403
+Client Epoch 2, Batch 78/78, Loss: 1.6908
+Epoch 2, Average Loss: 1.4930
+Client Epoch 3, Batch 1/78, Loss: 1.4774
+Client Epoch 3, Batch 78/78, Loss: 1.5918
+Epoch 3, Average Loss: 1.4761
+Client Epoch 4, Batch 1/78, Loss: 1.3726
+Client Epoch 4, Batch 78/78, Loss: 1.7476
+Epoch 4, Average Loss: 1.4531
+Client 8 Accuracy on Local Data: 0.6039
+Training Client 2...
+Client Epoch 1, Batch 1/92, Loss: 1.9281
+Client Epoch 1, Batch 92/92, Loss: 1.8629
+Epoch 1, Average Loss: 1.4243
+Client Epoch 2, Batch 1/92, Loss: 1.4230
+Client Epoch 2, Batch 92/92, Loss: 1.2943
+Epoch 2, Average Loss: 1.3482
+Client Epoch 3, Batch 1/92, Loss: 1.5424
+Client Epoch 3, Batch 92/92, Loss: 1.3327
+Epoch 3, Average Loss: 1.3091
+Client Epoch 4, Batch 1/92, Loss: 1.1735
+Client Epoch 4, Batch 92/92, Loss: 1.2327
+Epoch 4, Average Loss: 1.2867
+Client 2 Accuracy on Local Data: 0.6969
+Training Client 6...
+Client Epoch 1, Batch 1/89, Loss: 1.7983
+Client Epoch 1, Batch 89/89, Loss: 2.3258
+Epoch 1, Average Loss: 1.5896
+Client Epoch 2, Batch 1/89, Loss: 1.5504
+Client Epoch 2, Batch 89/89, Loss: 2.3232
+Epoch 2, Average Loss: 1.5219
+Client Epoch 3, Batch 1/89, Loss: 1.4176
+Client Epoch 3, Batch 89/89, Loss: 1.2873
+Epoch 3, Average Loss: 1.4737
+Client Epoch 4, Batch 1/89, Loss: 1.4238
+Client Epoch 4, Batch 89/89, Loss: 1.2128
+Epoch 4, Average Loss: 1.4517
+Client 6 Accuracy on Local Data: 0.6136
+Training Client 3...
+Client Epoch 1, Batch 1/94, Loss: 1.8290
+Client Epoch 1, Batch 94/94, Loss: 1.2343
+Epoch 1, Average Loss: 1.3506
+Client Epoch 2, Batch 1/94, Loss: 1.2735
+Client Epoch 2, Batch 94/94, Loss: 1.2362
+Epoch 2, Average Loss: 1.2760
+Client Epoch 3, Batch 1/94, Loss: 1.3549
+Client Epoch 3, Batch 94/94, Loss: 1.2313
+Epoch 3, Average Loss: 1.2442
+Client Epoch 4, Batch 1/94, Loss: 1.3330
+Client Epoch 4, Batch 94/94, Loss: 1.1934
+Epoch 4, Average Loss: 1.2239
+Client 3 Accuracy on Local Data: 0.7081
+Training Client 1...
+Client Epoch 1, Batch 1/88, Loss: 1.6294
+Client Epoch 1, Batch 88/88, Loss: 1.4211
+Epoch 1, Average Loss: 1.4534
+Client Epoch 2, Batch 1/88, Loss: 1.2480
+Client Epoch 2, Batch 88/88, Loss: 1.3537
+Epoch 2, Average Loss: 1.3900
+Client Epoch 3, Batch 1/88, Loss: 1.5076
+Client Epoch 3, Batch 88/88, Loss: 1.5759
+Epoch 3, Average Loss: 1.3612
+Client Epoch 4, Batch 1/88, Loss: 1.3466
+Client Epoch 4, Batch 88/88, Loss: 1.3301
+Epoch 4, Average Loss: 1.3328
+Client 1 Accuracy on Local Data: 0.6735
+Training Client 0...
+Client Epoch 1, Batch 1/83, Loss: 1.6596
+Client Epoch 1, Batch 83/83, Loss: 1.4758
+Epoch 1, Average Loss: 1.3807
+Client Epoch 2, Batch 1/83, Loss: 1.1888
+Client Epoch 2, Batch 83/83, Loss: 0.8769
+Epoch 2, Average Loss: 1.3076
+Client Epoch 3, Batch 1/83, Loss: 1.2799
+Client Epoch 3, Batch 83/83, Loss: 1.0647
+Epoch 3, Average Loss: 1.2810
+Client Epoch 4, Batch 1/83, Loss: 1.2983
+Client Epoch 4, Batch 83/83, Loss: 1.2928
+Epoch 4, Average Loss: 1.2545
+Client 0 Accuracy on Local Data: 0.7127
+Aggregated Weights for fc2.bias: -0.001082632690668106
+Aggregated Weights for fc2.bias: -0.0017978344112634659
+Aggregated Weights for fc2.bias: -0.0026414617896080017
+Aggregated Weights for fc2.bias: -0.0034561874344944954
+Aggregated Weights for fc2.bias: -0.004322769120335579
+Aggregated Weights for fc2.bias: -0.005136499181389809
+Aggregated Weights for fc2.bias: -0.0058976393193006516
+Global model saved as global_model.pth
+Round 3 - Global Model Test Accuracy: 0.4899
+
+=== FL Round 4 ===
+Training Client 3...
+Client Epoch 1, Batch 1/94, Loss: 1.9398
+Client Epoch 1, Batch 94/94, Loss: 1.2191
+Epoch 1, Average Loss: 1.2994
+Client Epoch 2, Batch 1/94, Loss: 1.2915
+Client Epoch 2, Batch 94/94, Loss: 1.0413
+Epoch 2, Average Loss: 1.2240
+Client Epoch 3, Batch 1/94, Loss: 1.1721
+Client Epoch 3, Batch 94/94, Loss: 1.3694
+Epoch 3, Average Loss: 1.2065
+Client Epoch 4, Batch 1/94, Loss: 1.2481
+Client Epoch 4, Batch 94/94, Loss: 1.0778
+Epoch 4, Average Loss: 1.1793
+Client 3 Accuracy on Local Data: 0.7275
+Training Client 7...
+Client Epoch 1, Batch 1/62, Loss: 2.0925
+Client Epoch 1, Batch 62/62, Loss: 1.2430
+Epoch 1, Average Loss: 1.4708
+Client Epoch 2, Batch 1/62, Loss: 1.4498
+Client Epoch 2, Batch 62/62, Loss: 1.2433
+Epoch 2, Average Loss: 1.3878
+Client Epoch 3, Batch 1/62, Loss: 1.5729
+Client Epoch 3, Batch 62/62, Loss: 1.3951
+Epoch 3, Average Loss: 1.3571
+Client Epoch 4, Batch 1/62, Loss: 1.4049
+Client Epoch 4, Batch 62/62, Loss: 1.2330
+Epoch 4, Average Loss: 1.3379
+Client 7 Accuracy on Local Data: 0.6731
+Training Client 0...
+Client Epoch 1, Batch 1/83, Loss: 1.5735
+Client Epoch 1, Batch 83/83, Loss: 1.3356
+Epoch 1, Average Loss: 1.3125
+Client Epoch 2, Batch 1/83, Loss: 1.2629
+Client Epoch 2, Batch 83/83, Loss: 1.3780
+Epoch 2, Average Loss: 1.2532
+Client Epoch 3, Batch 1/83, Loss: 1.1486
+Client Epoch 3, Batch 83/83, Loss: 1.2142
+Epoch 3, Average Loss: 1.2339
+Client Epoch 4, Batch 1/83, Loss: 1.1706
+Client Epoch 4, Batch 83/83, Loss: 1.2659
+Epoch 4, Average Loss: 1.2072
+Client 0 Accuracy on Local Data: 0.7340
+Training Client 1...
+Client Epoch 1, Batch 1/88, Loss: 1.4243
+Client Epoch 1, Batch 88/88, Loss: 1.3646
+Epoch 1, Average Loss: 1.3874
+Client Epoch 2, Batch 1/88, Loss: 1.3385
+Client Epoch 2, Batch 88/88, Loss: 1.6441
+Epoch 2, Average Loss: 1.3475
+Client Epoch 3, Batch 1/88, Loss: 1.3138
+Client Epoch 3, Batch 88/88, Loss: 1.4491
+Epoch 3, Average Loss: 1.3225
+Client Epoch 4, Batch 1/88, Loss: 1.3288
+Client Epoch 4, Batch 88/88, Loss: 1.1413
+Epoch 4, Average Loss: 1.2996
+Client 1 Accuracy on Local Data: 0.6828
+Training Client 9...
+Client Epoch 1, Batch 1/45, Loss: 1.7221
+Client Epoch 1, Batch 45/45, Loss: 1.3045
+Epoch 1, Average Loss: 1.4226
+Client Epoch 2, Batch 1/45, Loss: 1.4843
+Client Epoch 2, Batch 45/45, Loss: 1.4302
+Epoch 2, Average Loss: 1.3765
+Client Epoch 3, Batch 1/45, Loss: 1.4790
+Client Epoch 3, Batch 45/45, Loss: 1.4193
+Epoch 3, Average Loss: 1.3647
+Client Epoch 4, Batch 1/45, Loss: 1.2904
+Client Epoch 4, Batch 45/45, Loss: 1.4563
+Epoch 4, Average Loss: 1.3406
+Client 9 Accuracy on Local Data: 0.6691
+Training Client 5...
+Client Epoch 1, Batch 1/118, Loss: 1.9275
+Client Epoch 1, Batch 118/118, Loss: 1.8550
+Epoch 1, Average Loss: 1.5300
+Client Epoch 2, Batch 1/118, Loss: 1.5176
+Client Epoch 2, Batch 118/118, Loss: 1.7171
+Epoch 2, Average Loss: 1.4863
+Client Epoch 3, Batch 1/118, Loss: 1.4642
+Client Epoch 3, Batch 118/118, Loss: 1.5605
+Epoch 3, Average Loss: 1.4499
+Client Epoch 4, Batch 1/118, Loss: 1.5266
+Client Epoch 4, Batch 118/118, Loss: 1.8147
+Epoch 4, Average Loss: 1.4247
+Client 5 Accuracy on Local Data: 0.6273
+Training Client 8...
+Client Epoch 1, Batch 1/78, Loss: 1.8587
+Client Epoch 1, Batch 78/78, Loss: 1.3448
+Epoch 1, Average Loss: 1.5013
+Client Epoch 2, Batch 1/78, Loss: 1.5034
+Client Epoch 2, Batch 78/78, Loss: 1.3943
+Epoch 2, Average Loss: 1.4464
+Client Epoch 3, Batch 1/78, Loss: 1.3320
+Client Epoch 3, Batch 78/78, Loss: 1.6106
+Epoch 3, Average Loss: 1.4300
+Client Epoch 4, Batch 1/78, Loss: 1.2486
+Client Epoch 4, Batch 78/78, Loss: 1.3138
+Epoch 4, Average Loss: 1.4151
+Client 8 Accuracy on Local Data: 0.6158
+Aggregated Weights for fc2.bias: -0.0009786137379705906
+Aggregated Weights for fc2.bias: -0.0016172355972230434
+Aggregated Weights for fc2.bias: -0.002476770430803299
+Aggregated Weights for fc2.bias: -0.003395693376660347
+Aggregated Weights for fc2.bias: -0.003863940015435219
+Aggregated Weights for fc2.bias: -0.0050865281373262405
+Aggregated Weights for fc2.bias: -0.005894193425774574
+Global model saved as global_model.pth
+Round 4 - Global Model Test Accuracy: 0.4795
+
+=== FL Round 5 ===
+Training Client 7...
+Client Epoch 1, Batch 1/62, Loss: 1.6626
+Client Epoch 1, Batch 62/62, Loss: 1.6477
+Epoch 1, Average Loss: 1.4166
+Client Epoch 2, Batch 1/62, Loss: 1.1133
+Client Epoch 2, Batch 62/62, Loss: 1.5612
+Epoch 2, Average Loss: 1.3508
+Client Epoch 3, Batch 1/62, Loss: 1.3749
+Client Epoch 3, Batch 62/62, Loss: 1.6325
+Epoch 3, Average Loss: 1.3251
+Client Epoch 4, Batch 1/62, Loss: 1.2984
+Client Epoch 4, Batch 62/62, Loss: 1.6260
+Epoch 4, Average Loss: 1.3023
+Client 7 Accuracy on Local Data: 0.6940
+Training Client 0...
+Client Epoch 1, Batch 1/83, Loss: 1.4462
+Client Epoch 1, Batch 83/83, Loss: 1.0494
+Epoch 1, Average Loss: 1.2622
+Client Epoch 2, Batch 1/83, Loss: 1.2447
+Client Epoch 2, Batch 83/83, Loss: 1.4010
+Epoch 2, Average Loss: 1.2267
+Client Epoch 3, Batch 1/83, Loss: 1.2436
+Client Epoch 3, Batch 83/83, Loss: 1.2663
+Epoch 3, Average Loss: 1.1962
+Client Epoch 4, Batch 1/83, Loss: 1.0964
+Client Epoch 4, Batch 83/83, Loss: 1.0445
+Epoch 4, Average Loss: 1.1743
+Client 0 Accuracy on Local Data: 0.7516
+Training Client 9...
+Client Epoch 1, Batch 1/45, Loss: 1.4670
+Client Epoch 1, Batch 45/45, Loss: 1.3541
+Epoch 1, Average Loss: 1.3782
+Client Epoch 2, Batch 1/45, Loss: 1.5543
+Client Epoch 2, Batch 45/45, Loss: 1.2925
+Epoch 2, Average Loss: 1.3327
+Client Epoch 3, Batch 1/45, Loss: 1.2711
+Client Epoch 3, Batch 45/45, Loss: 1.1545
+Epoch 3, Average Loss: 1.3274
+Client Epoch 4, Batch 1/45, Loss: 1.3273
+Client Epoch 4, Batch 45/45, Loss: 1.3487
+Epoch 4, Average Loss: 1.3095
+Client 9 Accuracy on Local Data: 0.6865
+Training Client 3...
+Client Epoch 1, Batch 1/94, Loss: 1.7207
+Client Epoch 1, Batch 94/94, Loss: 1.2986
+Epoch 1, Average Loss: 1.2653
+Client Epoch 2, Batch 1/94, Loss: 1.1369
+Client Epoch 2, Batch 94/94, Loss: 1.0251
+Epoch 2, Average Loss: 1.1963
+Client Epoch 3, Batch 1/94, Loss: 1.1799
+Client Epoch 3, Batch 94/94, Loss: 1.3200
+Epoch 3, Average Loss: 1.1700
+Client Epoch 4, Batch 1/94, Loss: 1.0731
+Client Epoch 4, Batch 94/94, Loss: 1.0281
+Epoch 4, Average Loss: 1.1502
+Client 3 Accuracy on Local Data: 0.7348
+Training Client 5...
+Client Epoch 1, Batch 1/118, Loss: 1.6329
+Client Epoch 1, Batch 118/118, Loss: 1.6646
+Epoch 1, Average Loss: 1.4729
+Client Epoch 2, Batch 1/118, Loss: 1.3460
+Client Epoch 2, Batch 118/118, Loss: 1.3004
+Epoch 2, Average Loss: 1.4398
+Client Epoch 3, Batch 1/118, Loss: 1.4095
+Client Epoch 3, Batch 118/118, Loss: 1.4276
+Epoch 3, Average Loss: 1.4161
+Client Epoch 4, Batch 1/118, Loss: 1.3192
+Client Epoch 4, Batch 118/118, Loss: 1.2299
+Epoch 4, Average Loss: 1.3912
+Client 5 Accuracy on Local Data: 0.6364
+Training Client 8...
+Client Epoch 1, Batch 1/78, Loss: 1.8622
+Client Epoch 1, Batch 78/78, Loss: 1.6115
+Epoch 1, Average Loss: 1.4820
+Client Epoch 2, Batch 1/78, Loss: 1.4439
+Client Epoch 2, Batch 78/78, Loss: 1.1216
+Epoch 2, Average Loss: 1.4177
+Client Epoch 3, Batch 1/78, Loss: 1.3097
+Client Epoch 3, Batch 78/78, Loss: 1.2949
+Epoch 3, Average Loss: 1.3971
+Client Epoch 4, Batch 1/78, Loss: 1.3498
+Client Epoch 4, Batch 78/78, Loss: 1.3995
+Epoch 4, Average Loss: 1.3865
+Client 8 Accuracy on Local Data: 0.6332
+Training Client 6...
+Client Epoch 1, Batch 1/89, Loss: 1.6748
+Client Epoch 1, Batch 89/89, Loss: 1.1710
+Epoch 1, Average Loss: 1.4864
+Client Epoch 2, Batch 1/89, Loss: 1.4078
+Client Epoch 2, Batch 89/89, Loss: 1.8365
+Epoch 2, Average Loss: 1.4416
+Client Epoch 3, Batch 1/89, Loss: 1.3312
+Client Epoch 3, Batch 89/89, Loss: 1.2870
+Epoch 3, Average Loss: 1.4139
+Client Epoch 4, Batch 1/89, Loss: 1.4086
+Client Epoch 4, Batch 89/89, Loss: 1.2372
+Epoch 4, Average Loss: 1.3901
+Client 6 Accuracy on Local Data: 0.6468
+Aggregated Weights for fc2.bias: -0.0006381275597959757
+Aggregated Weights for fc2.bias: -0.0014969906769692898
+Aggregated Weights for fc2.bias: -0.001964871771633625
+Aggregated Weights for fc2.bias: -0.002942732535302639
+Aggregated Weights for fc2.bias: -0.004164351150393486
+Aggregated Weights for fc2.bias: -0.0049713775515556335
+Aggregated Weights for fc2.bias: -0.005890717729926109
+Global model saved as global_model.pth
+Round 5 - Global Model Test Accuracy: 0.5414
+
+Federated Learning Training Complete!
+⚙ ⚙ ⚙ Evaluating model on test set...
+Final Test Accuracy: 0.5414, Test Loss: 1.3612
+⚙ ⚙ ⚙ Generating confusion matrix...
+✔ Model evaluation completed!
+Test Accuracy: 0.5414, Test Loss: 1.3612
+

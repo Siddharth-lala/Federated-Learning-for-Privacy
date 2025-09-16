@@ -1,0 +1,254 @@
+Last login: Thu Mar 20 11:46:48 on ttys000
+(base) siddharthlala@Siddharths-MacBook-Pro ~ % cd /Users/siddharthlala/Desktop/Experiments/E9
+(base) siddharthlala@Siddharths-MacBook-Pro E9 % source ~/cifar10_env/bin/activate
+python FL_model_testing.py
+⚙ ⚙ ⚙ Loading test data...
+⚙ ⚙ ⚙ Loading trained global model...
+Loading CIFAR-10 dataset...
+Creating non-IID data partitions...
+Generating class distribution visualization...
+Starting federated learning process...
+
+=== FL Round 1 ===
+Training Client 6...
+Epoch 1, Average Loss: 1.7595
+Epoch 2, Average Loss: 1.5606
+Epoch 3, Average Loss: 1.4868
+Client 6 Accuracy on Local Data: 0.6050
+Training Client 2...
+Epoch 1, Average Loss: 1.6473
+Epoch 2, Average Loss: 1.4922
+Epoch 3, Average Loss: 1.4154
+Client 2 Accuracy on Local Data: 0.6576
+Training Client 5...
+Epoch 1, Average Loss: 1.6965
+Epoch 2, Average Loss: 1.4740
+Epoch 3, Average Loss: 1.3941
+Client 5 Accuracy on Local Data: 0.6806
+Training Client 9...
+Epoch 1, Average Loss: 1.8778
+Epoch 2, Average Loss: 1.6748
+Epoch 3, Average Loss: 1.5626
+Client 9 Accuracy on Local Data: 0.5862
+Training Client 0...
+Epoch 1, Average Loss: 1.5310
+Epoch 2, Average Loss: 1.3877
+Epoch 3, Average Loss: 1.3078
+Client 0 Accuracy on Local Data: 0.6973
+Aggregated Weights for fc2.bias: 0.006797997280955315
+Aggregated Weights for fc2.bias: 0.016866903752088547
+Aggregated Weights for fc2.bias: 0.02355203591287136
+Aggregated Weights for fc2.bias: 0.02682414837181568
+Aggregated Weights for fc2.bias: 0.03161000460386276
+Global model saved as global_model.pth
+Round 1 - Global Model Test Accuracy: 0.3875
+
+=== FL Round 2 ===
+Training Client 5...
+Epoch 1, Average Loss: 1.4561
+Epoch 2, Average Loss: 1.3319
+Epoch 3, Average Loss: 1.2503
+Client 5 Accuracy on Local Data: 0.7101
+Training Client 9...
+Epoch 1, Average Loss: 1.5536
+Epoch 2, Average Loss: 1.4508
+Epoch 3, Average Loss: 1.3879
+Client 9 Accuracy on Local Data: 0.6774
+Training Client 1...
+Epoch 1, Average Loss: 1.3566
+Epoch 2, Average Loss: 1.2420
+Epoch 3, Average Loss: 1.1580
+Client 1 Accuracy on Local Data: 0.7694
+Training Client 6...
+Epoch 1, Average Loss: 1.5332
+Epoch 2, Average Loss: 1.4170
+Epoch 3, Average Loss: 1.3586
+Client 6 Accuracy on Local Data: 0.6553
+Training Client 7...
+Epoch 1, Average Loss: 1.5031
+Epoch 2, Average Loss: 1.3834
+Epoch 3, Average Loss: 1.3365
+Client 7 Accuracy on Local Data: 0.6707
+Aggregated Weights for fc2.bias: 0.0077127693220973015
+Aggregated Weights for fc2.bias: 0.011487864889204502
+Aggregated Weights for fc2.bias: 0.018860314041376114
+Aggregated Weights for fc2.bias: 0.026703333482146263
+Aggregated Weights for fc2.bias: 0.031391631811857224
+Global model saved as global_model.pth
+Round 2 - Global Model Test Accuracy: 0.5039
+
+=== FL Round 3 ===
+Training Client 6...
+Epoch 1, Average Loss: 1.4047
+Epoch 2, Average Loss: 1.3267
+Epoch 3, Average Loss: 1.2688
+Client 6 Accuracy on Local Data: 0.7348
+Training Client 2...
+Epoch 1, Average Loss: 1.3987
+Epoch 2, Average Loss: 1.3037
+Epoch 3, Average Loss: 1.2473
+Client 2 Accuracy on Local Data: 0.7542
+Training Client 7...
+Epoch 1, Average Loss: 1.3838
+Epoch 2, Average Loss: 1.3027
+Epoch 3, Average Loss: 1.2373
+Client 7 Accuracy on Local Data: 0.7120
+Training Client 3...
+Epoch 1, Average Loss: 1.3421
+Epoch 2, Average Loss: 1.2692
+Epoch 3, Average Loss: 1.2044
+Client 3 Accuracy on Local Data: 0.7276
+Training Client 9...
+Epoch 1, Average Loss: 1.4210
+Epoch 2, Average Loss: 1.3454
+Epoch 3, Average Loss: 1.2586
+Client 9 Accuracy on Local Data: 0.7007
+Aggregated Weights for fc2.bias: 0.005943469237536192
+Aggregated Weights for fc2.bias: 0.014746619388461113
+Aggregated Weights for fc2.bias: 0.018299411982297897
+Aggregated Weights for fc2.bias: 0.02821258455514908
+Aggregated Weights for fc2.bias: 0.031073395162820816
+Global model saved as global_model.pth
+Round 3 - Global Model Test Accuracy: 0.5492
+
+=== FL Round 4 ===
+Training Client 7...
+Epoch 1, Average Loss: 1.3218
+Epoch 2, Average Loss: 1.2379
+Epoch 3, Average Loss: 1.1901
+Client 7 Accuracy on Local Data: 0.6888
+Training Client 2...
+Epoch 1, Average Loss: 1.2719
+Epoch 2, Average Loss: 1.2048
+Epoch 3, Average Loss: 1.1656
+Client 2 Accuracy on Local Data: 0.7887
+Training Client 8...
+Epoch 1, Average Loss: 1.3882
+Epoch 2, Average Loss: 1.2943
+Epoch 3, Average Loss: 1.2371
+Client 8 Accuracy on Local Data: 0.7303
+Training Client 3...
+Epoch 1, Average Loss: 1.2326
+Epoch 2, Average Loss: 1.1650
+Epoch 3, Average Loss: 1.1251
+Client 3 Accuracy on Local Data: 0.8107
+Training Client 5...
+Epoch 1, Average Loss: 1.2512
+Epoch 2, Average Loss: 1.1675
+Epoch 3, Average Loss: 1.1200
+Client 5 Accuracy on Local Data: 0.7961
+Aggregated Weights for fc2.bias: 0.003326299600303173
+Aggregated Weights for fc2.bias: 0.01156829297542572
+Aggregated Weights for fc2.bias: 0.016005370765924454
+Aggregated Weights for fc2.bias: 0.02528640627861023
+Aggregated Weights for fc2.bias: 0.030758563429117203
+Global model saved as global_model.pth
+Round 4 - Global Model Test Accuracy: 0.6107
+
+=== FL Round 5 ===
+Training Client 1...
+Epoch 1, Average Loss: 1.1268
+Epoch 2, Average Loss: 1.0549
+Epoch 3, Average Loss: 0.9991
+Client 1 Accuracy on Local Data: 0.8508
+Training Client 3...
+Epoch 1, Average Loss: 1.1630
+Epoch 2, Average Loss: 1.1099
+Epoch 3, Average Loss: 1.0690
+Client 3 Accuracy on Local Data: 0.8329
+Training Client 9...
+Epoch 1, Average Loss: 1.2686
+Epoch 2, Average Loss: 1.1905
+Epoch 3, Average Loss: 1.1351
+Client 9 Accuracy on Local Data: 0.8204
+Training Client 5...
+Epoch 1, Average Loss: 1.1791
+Epoch 2, Average Loss: 1.1025
+Epoch 3, Average Loss: 1.0516
+Client 5 Accuracy on Local Data: 0.8226
+Training Client 8...
+Epoch 1, Average Loss: 1.3004
+Epoch 2, Average Loss: 1.2336
+Epoch 3, Average Loss: 1.1735
+Client 8 Accuracy on Local Data: 0.7925
+Aggregated Weights for fc2.bias: 0.005882900208234787
+Aggregated Weights for fc2.bias: 0.01632114127278328
+Aggregated Weights for fc2.bias: 0.01933351531624794
+Aggregated Weights for fc2.bias: 0.025487937033176422
+Aggregated Weights for fc2.bias: 0.030478231608867645
+Global model saved as global_model.pth
+Round 5 - Global Model Test Accuracy: 0.6303
+
+=== FL Round 6 ===
+Training Client 2...
+Epoch 1, Average Loss: 1.2140
+Epoch 2, Average Loss: 1.1438
+Epoch 3, Average Loss: 1.0864
+Client 2 Accuracy on Local Data: 0.7995
+Training Client 1...
+Epoch 1, Average Loss: 1.0570
+Epoch 2, Average Loss: 1.0023
+Epoch 3, Average Loss: 0.9524
+Client 1 Accuracy on Local Data: 0.8824
+Training Client 6...
+Epoch 1, Average Loss: 1.2891
+Epoch 2, Average Loss: 1.2074
+Epoch 3, Average Loss: 1.1486
+Client 6 Accuracy on Local Data: 0.8055
+Training Client 8...
+Epoch 1, Average Loss: 1.2481
+Epoch 2, Average Loss: 1.1672
+Epoch 3, Average Loss: 1.1151
+Client 8 Accuracy on Local Data: 0.8229
+Training Client 3...
+Epoch 1, Average Loss: 1.0926
+Epoch 2, Average Loss: 1.0516
+Epoch 3, Average Loss: 1.0099
+Client 3 Accuracy on Local Data: 0.8526
+Aggregated Weights for fc2.bias: 0.007590314373373985
+Aggregated Weights for fc2.bias: 0.012407343834638596
+Aggregated Weights for fc2.bias: 0.017531882971525192
+Aggregated Weights for fc2.bias: 0.021618016064167023
+Aggregated Weights for fc2.bias: 0.03016519546508789
+Global model saved as global_model.pth
+Round 6 - Global Model Test Accuracy: 0.6471
+
+=== FL Round 7 ===
+Training Client 2...
+Epoch 1, Average Loss: 1.1469
+Epoch 2, Average Loss: 1.0888
+Epoch 3, Average Loss: 1.0474
+Client 2 Accuracy on Local Data: 0.8603
+Training Client 9...
+Epoch 1, Average Loss: 1.2031
+Epoch 2, Average Loss: 1.1084
+Epoch 3, Average Loss: 1.0522
+Client 9 Accuracy on Local Data: 0.7682
+Training Client 3...
+Epoch 1, Average Loss: 1.0453
+Epoch 2, Average Loss: 1.0026
+Epoch 3, Average Loss: 0.9660
+Client 3 Accuracy on Local Data: 0.8913
+Training Client 0...
+Epoch 1, Average Loss: 1.1306
+Epoch 2, Average Loss: 1.0536
+Epoch 3, Average Loss: 0.9802
+Client 0 Accuracy on Local Data: 0.8571
+Training Client 7...
+Epoch 1, Average Loss: 1.2493
+Epoch 2, Average Loss: 1.1589
+Epoch 3, Average Loss: 1.0924
+Client 7 Accuracy on Local Data: 0.8064
+Aggregated Weights for fc2.bias: 0.008969128131866455
+Aggregated Weights for fc2.bias: 0.011883776634931564
+Aggregated Weights for fc2.bias: 0.021983444690704346
+Aggregated Weights for fc2.bias: 0.026246488094329834
+Aggregated Weights for fc2.bias: 0.029866181313991547
+Global model saved as global_model.pth
+Round 7 - Global Model Test Accuracy: 0.6507
+
+Federated Learning Training Complete!
+⚙ ⚙ ⚙ Evaluating model on test set...
+Final Test Accuracy: 0.6507, Test Loss: 1.0520
+⚙ ⚙ ⚙ Generating confusion matrix...
+

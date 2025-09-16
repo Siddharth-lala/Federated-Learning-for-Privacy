@@ -1,0 +1,54 @@
+1.1.2 A Typical Federated Training Process
+We now consider a template for FL training that encompasses the Federated Averaging algorithm of McMa-
+han et al. [337] and many others; again, variations are possible, but this gives a common starting point.
+A server (service provider) orchestrates the training process, by repeating the following steps until train-
+ing is stopped (at the discretion of the model engineer who is monitoring the training process):
+1. Client selection: The server samples from a set of clients meeting eligibility requirements. For
+example, mobile phones might only check in to the server if they are plugged in, on an unmetered
+wi-fi connection, and idle, in order to avoid impacting the user of the device.
+2. Broadcast: The selected clients download the current model weights and a training program (e.g. a
+TensorFlow graph [2]) from the server.
+3. Client computation: Each selected device locally computes an update to the model by executing the
+training program, which might for example run SGD on the local data (as in Federated Averaging).
+4. Aggregation: The server collects an aggregate of the device updates. For efficiency, stragglers might
+be dropped at this point once a sufficient number of devices have reported results. This stage is also
+the integration point for many other techniques which will be discussed later, possibly including:
+secure aggregation for added privacy, lossy compression of aggregates for communication efficiency,
+and noise addition and update clipping for differential privacy.
+5. Model update: The server locally updates the shared model based on the aggregated update computed
+from the clients that participated in the current round.
+
+A generic baseline model is stored at the central server. The copies of this model are shared with the client devices, which then train the models based on the local data they generate. Over time, the models on individual devices become personalized and provide a better user experience. 
+In the next stage, the updates (model parameters) from the locally trained models are shared with the main model located at the central server using secure aggregation techniques. This model combines and averages different inputs to generate new learnings. Since the data is collected from diverse sources, there is greater scope for the model to become generalizable. 
+Once the central model has been re-trained on new parameters, it’s shared with the client devices again for the next iteration. With every cycle, the models gather a varied amount of information and improve further without creating privacy breaches. 
+
+Federated learning algorithms
+Federated stochastic gradient descent (FedSGD)
+In traditional SGD, the gradients are computed on mini-batches, which are a fraction of data samples obtained from the total samples. In the federated setting, these mini-batches can be considered different client devices that comprise local data.
+In FedSGD, the central model is distributed to the clients, and each client computes the gradients using local data. These gradients are then passed to the central server, which aggregates the gradients in proportion to the number of samples present on each client to calculate the gradient descent step.
+Federated averaging (FedAvg)
+Federated averaging is an extension of the FedSGD algorithm. 
+Clients can perform more than one local gradient descent update. Instead of sharing the gradients with the central server, weights tuned on the local model are shared. Finally, the server aggregates the clients' weights (model parameters).
+Federated Averaging is a generalization of FedSGD—if all the clients begin from the same initialization, averaging the gradients is equal to averaging the weights. Therefore, Federated Averaging leaves room for tuning the local weights before sending them to the central server for averaging. 
+
+Challenges and limitations of federated learning
+As any newly-developed technology, federated learning meets with a few crucial challenges. Let’s go through a few examples.
+Communication efficiency
+Federated learning involves millions of devices in one network. The transfer of messages becomes slow due to several reasons: low bandwidth, lack of resources, or geographical location. 
+To keep the communication channels efficient, the total number of message passes and the size of a message in a single pass should be reduced. We can achieved it by using
+local updating methods (to reduce the number of rounds)
+model compression schemes (to reduce the size of the message)
+decentralized training (to operate in low bandwidth)
+Privacy and data protection
+Privacy and data security are some of the biggest concerns with federated learning. Although the local data stays on the user device, there’s a risk for the information to be revealed from the model updates shared in the network.
+Some of the common privacy-preserving techniques that can solve this problem include:
+Differential privacy—adding noisy data that makes it difficult to discern real information in case of data leaks
+Homomorphic encryption—performing computation on encrypted data
+Secure multiparty computation—spreading the sensitive data to different data owners so that they can collaboratively perform computation and reduce the risk of privacy breach
+Systems heterogeneity
+With the large number of devices playing a role in federated learning networks, accounting for differences in storage, communication, and computational capabilities is a huge challenge. Additionally, only a few of these devices participate at a given time, which may lead to biased training.
+Such heterogeneities can be handled by the techniques of asynchronous communication, active device sampling, and fault tolerance. 
+Statistical heterogeneity
+This problem is posed by the multiple variations of data present across the client devices.
+For example, some devices may have high-resolution image data, while others can only store low-resolution pictures, or languages might vary based on geographical location. 
+These instances denote that data is non-i.i.d in a federated learning setting, which is in contrast with the assumption of i.i.d data in normal algorithms. This might cause problems in the data structuring, modeling, and inferencing phases. 
